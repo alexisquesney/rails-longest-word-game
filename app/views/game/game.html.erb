@@ -1,0 +1,10 @@
+<h1>Game#game</h1>
+
+<p><em>This is the grid randomly picked for you ! ! ! Enjoy the game</em></p>
+<%= session[:grid] %>
+<br><br>
+<form action="/score">
+  <label for="question">What's your best shot?</label>
+  <input type="text" id="question" name="answer" placeholder="what time is it?">
+  <input type="submit" value="Go on!">
+</form>
